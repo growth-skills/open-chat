@@ -1,3 +1,21 @@
-.super{
-    background-color: yellow;
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+/* style du body */
+html,body{
+    background-color: rgb(232, 238, 241);
+}
+/* style du container */
+.container{
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px 10px;
+    background-color: rgb(255, 255, 255);
+    width: 40%;
+    height: auto;
+    margin-top: 40px;
+    text-align: center;
+    
+    
 }
