@@ -87,3 +87,15 @@ input::placeholder {
   text-decoration: none;
 }
 /* fin du style inscription */ 
+
+
+/* style page motpass */
+/* syle retour  */
+
+.retour ,a{
+  color: rgb(112, 56, 245);
+  text-decoration: none;
+  text-align: center;
+  font-size: 19px;
+  padding: 10px 0;
+}
