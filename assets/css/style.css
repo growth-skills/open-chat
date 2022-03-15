@@ -88,6 +88,13 @@ input::placeholder {
 }
 /* fin du style inscription */ 
 
+/* style connexion */
+.lab1  .changmp a{
+  float: right;
+  text-decoration: none;
+  color: rgb(112, 56, 245);
+  font-weight: 400;
+}
 
 /* style page motpass */
 /* syle retour  */
