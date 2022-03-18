@@ -6,6 +6,98 @@
 html, body{
     background-color: black;
 }
-.asid{
-    background-color:darkgray;
+
+/* Style de l'aside (partie droite) */
+
+.asid aside{
+    width: 40%;
+    height: auto;
+    float: left;
+    box-shadow: 2px 0 black;
+    background-color: rgb(39, 39, 39);
+    color: white;
+}
+aside .search{
+    padding: 10px 0;
+}
+.search input{
+    width: 75%;
+    height: 50px;
+    margin-left: 100px;
+    border: none;
+    border: solid 1px rgb(58, 57, 57);
+    border-radius: 35px 35px;
+    background-color: black;
+    color: white;
+    outline: none;
+    padding-left: 30px;
+
+}
+input::placeholder{
+    font-size: 20px;
+}
+.search i{
+    width: 50px;
+    position:absolute; 
+    left:90px; 
+    top:6px; 
+    padding:20px 20px; 
+    color:darkgrey; 
+}
+.cont{
+    display: flex;
+}
+.list{
+    padding: 10px 0;
+}
+ .list img{
+    width: 20%;
+    height: auto;
+    border-radius: 50% 50%;
+    padding: 10px 0;
+}
+.nom {
+    padding: 10px 0;
+}
+.nom h5{
+    margin-left: -260px;
+    font-size: 20px;
+    padding: 10px 0;
+}
+.heure{
+    float: right;
+    margin-left: 230px;
+    font-size: 13px;
+    font-weight: 400;
+    color: darkgrey;
+
+}
+.repon{
+    font-size: 16px;
+    font-weight: 400;
+    color: darkgrey;
+}
+
+/* Style de la partie gauche */
+
+.no-aside .fil{
+    background-color:rgb(39, 39, 39);
+}
+.fil{
+    color: white;
+    display: flex;
+    padding: 8px 20px;
+}
+.img img{
+    width: 16%;
+    height: auto;
+    border-radius: 50px 50px;
+}
+.name h5{
+    margin-left: -240px;
+}
+.last{
+    font-weight: 400;
+    font-size: 16px;
+    color: darkgrey;
 }
