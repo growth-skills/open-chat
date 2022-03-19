@@ -5,6 +5,7 @@
 }
 html, body{
     background-color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 /* Style de l'aside (partie droite) */
@@ -13,7 +14,7 @@ html, body{
     width: 40%;
     height: auto;
     float: left;
-    box-shadow: 2px 0 black;
+    /* box-shadow: 2px 0 black; */
     background-color: rgb(39, 39, 39);
     color: white;
 }
@@ -44,49 +45,50 @@ input::placeholder{
     padding:20px 20px; 
     color:darkgrey; 
 }
-.cont{
+
+.contenaire{
+    color: white;
     display: flex;
+    padding: 5px 20px;
+    text-decoration: none;
 }
-.list{
-    padding: 10px 0;
+.liens{
+    text-decoration: none;
 }
- .list img{
+.contenaire:hover{
+    background-color: rgb(112, 56, 245);
+    border-radius: 10px 10px;
+}
+.imgs img{
     width: 20%;
     height: auto;
-    border-radius: 50% 50%;
-    padding: 10px 0;
+    border-radius: 50px 50px;
 }
-.nom {
-    padding: 10px 0;
-}
-.nom h5{
-    margin-left: -260px;
-    font-size: 20px;
-    padding: 10px 0;
-}
-.heure{
-    float: right;
-    margin-left: 230px;
-    font-size: 13px;
-    font-weight: 400;
-    color: darkgrey;
-
+.nam h5{
+    margin-left: -225px;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 500;
 }
 .repon{
-    font-size: 16px;
     font-weight: 400;
+    font-size: 16px;
     color: darkgrey;
 }
+
 
 /* Style de la partie gauche */
 
 .no-aside .fil{
     background-color:rgb(39, 39, 39);
+    position: fixed;
+    margin-left: 515px;
+    width: 100%;
 }
 .fil{
     color: white;
     display: flex;
-    padding: 8px 20px;
+    padding: 5px 20px;
 }
 .img img{
     width: 16%;
@@ -95,6 +97,8 @@ input::placeholder{
 }
 .name h5{
     margin-left: -240px;
+    font-size: 18px;
+    font-weight: 500;
 }
 .last{
     font-weight: 400;
