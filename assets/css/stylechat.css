@@ -28,23 +28,23 @@ aside .search{
     border: none;
     border: solid 1px rgb(58, 57, 57);
     border-radius: 35px 35px;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.356);
     color: white;
+    font-size: 20px;
     outline: none;
-    padding-left: 30px;
+    padding-left: 60px;
 
 }
 input::placeholder{
     font-size: 20px;
 }
-/* .search i{
-    width: 50px;
+.search i{
     position:absolute; 
-    left:90px; 
-    top:6px; 
-    padding:20px 20px; 
+    left:80px; 
+    top:15px; 
+    padding:20px 40px; 
     color:darkgrey; 
-} */
+}
 
 .contenaire{
     color: white;
@@ -113,54 +113,156 @@ nav{
     color: darkgrey;
 }
 
-/* .no-aside{
-    background-color: aliceblue;
-}
-nav{
-    background-color:rgb(39, 39, 39);
-    position: fixed;
-    margin-left: 515px;
-    width: 100%;
-}
-.fil{
-    color: white;
-    display: flex;
-    padding: 5px 20px;
-}
-.img img{
-    width: 16%;
-    height: auto;
-    border-radius: 50px 50px;
-}
-.name h5{
-    margin-left: -240px;
-    font-size: 18px;
-    font-weight: 500;
-}
-.last{
-    font-weight: 400;
-    font-size: 16px;
-    color: darkgrey;
-} */
-
 /* Style du partie chat */
+/* style de la converation à gauche  */
 
-.cont{
-    margin-top: 80px;
+.conv-gauche{
+    margin-top: 70px;
     padding: 0 150px;
 }
-.cont .chatgch{
+.conv-gauche .chatgch{
     background-color: rgb(39, 39, 39);
     border: solid 1px rgb(39, 39, 39);
     border-radius:  12px 12px 12px 0;
     width: 170px;
-    padding: 7px 0;
+    padding: 2px 0;
 }
-.cont .chatgch p{
+.conv-gauche .chatgch p{
     margin-left: 10px;
 }
-.cont .chatgch p .hrr{
+.conv-gauche .chatgch  .hrr{
     font-size: 12px;
     color: darkgrey;
-    text-align: center;
+    text-align: right;
 }
+/* fin  */
+/* Style bouleGen  */
+.bouleGen{
+    padding: 0 0px;
+    height: auto;
+}
+/* style de la conversation à droite */
+.conv-droite{
+    margin-left: 500px;
+}
+.conv-droite .chatdrt{
+    background-color: rgb(112, 56, 245);
+    border: solid 1px rgb(112, 56, 245);
+    border-radius: 12px 12px 0 12px;
+    width: 170px;
+    padding: 2px 0;
+}
+.conv-droite .chatdrt p{
+    margin-left: 12px;
+}
+.conv-droite .chatdrt .hrr{
+    font-size: 12px;
+    color: darkgrey;
+    text-align: right;
+}
+/* Style de la conver-1 */
+
+.conv-gauche-1{
+    margin-top: 10px;
+    padding: 0 150px;
+}
+.conv-gauche-1 .chatgch-1{
+    background-color: rgb(39, 39, 39);
+    border: solid 1px rgb(39, 39, 39);
+    border-radius:  12px 12px 12px 0;
+    width: 520px;
+    padding: 2px 0;
+}
+.conv-gauche-1 .chatgch-1 p{
+    margin-left: 10px;
+}
+.conv-gauche-1 .chatgch-1  .hrr{
+    font-size: 12px;
+    color: darkgrey;
+    text-align: right;
+}
+
+/* style de la conver-1 */
+
+.conv-droite-1{
+    margin-left: 500px;
+    margin-top: 10px;
+}
+.conv-droite-1 .chatdrt-1{
+    background-color: rgb(112, 56, 245);
+    border: solid 1px rgb(112, 56, 245);
+    border-radius: 12px 12px 0 12px;
+    width: 170px;
+    padding: 2px 0;
+}
+.conv-droite-1 .chatdrt-1 p{
+    margin-left: 12px;
+}
+.conv-droite-1 .chatdrt-1 .hrr{
+    font-size: 12px;
+    color: darkgrey;
+    text-align: right;
+}
+
+/* style de la conver-2 */
+
+.conv-droite-2{
+    margin-left: 170px;
+    margin-top: 10px;
+}
+.conv-droite-2 .chatdrt-2{
+    background-color: rgb(112, 56, 245);
+    border: solid 1px rgb(112, 56, 245);
+    border-radius: 12px 12px 0 12px;
+    width: 500px;
+    padding: 2px 0;
+}
+.conv-droite-2 .chatdrt-2 p{
+    margin-left: 12px;
+}
+.conv-droite-2 .chatdrt-2 .hrr{
+    font-size: 12px;
+    color: darkgrey;
+    text-align: right;
+}
+/* Fin style conversation */
+
+/* Début style boite mssg  */
+.boiteMsg{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.saisieMsg{
+    background-color: rgb(39, 39, 39);
+    border: solid 1px rgb(39, 39, 39);
+    border-radius: 12px 12px 0 12px;
+    width: 67%;
+    padding: 10px 10px;
+    margin-left: 150px;
+}
+.saisieMsg a{
+    color: darkgrey;
+}
+
+.saisieMsg input{
+    background-color: rgb(39, 39, 39);
+    border: solid 1px rgb(39, 39, 39);
+    outline: none;
+    padding: 10px 10px;
+    font-size: 18px;
+    color: white;
+    width: 87%;
+    height: auto;
+}
+.sendMsg{
+    background-color: rgb(39, 39, 39);
+    border: solid 1px rgb(39, 39, 39);
+    border-radius: 50px 50px;
+    padding: 20px 20px;
+    margin-right: 25px;
+}
+.sendMsg a{
+    color: rgb(136, 89, 245);
+}
+/* fin */
