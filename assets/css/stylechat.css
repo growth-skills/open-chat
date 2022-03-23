@@ -81,7 +81,7 @@ input::placeholder{
 
 .no-aside{
     width: 60%;
-    height: 100%;
+    height: auto;
     float: left;
     background-color: black;
     color: white;
@@ -232,14 +232,16 @@ nav{
     display: flex;
     justify-content: space-between;
     padding: 10px 0;
+    position: fixed;
 }
 .saisieMsg{
     background-color: rgb(39, 39, 39);
     border: solid 1px rgb(39, 39, 39);
     border-radius: 12px 12px 0 12px;
-    width: 67%;
+    width: 530px;
+    height: auto;
     padding: 10px 10px;
-    margin-left: 150px;
+    margin-left: 140px;
 }
 .saisieMsg a{
     color: darkgrey;
@@ -252,15 +254,16 @@ nav{
     padding: 10px 10px;
     font-size: 18px;
     color: white;
-    width: 87%;
+    width: 88%;
     height: auto;
 }
 .sendMsg{
-    background-color: rgb(39, 39, 39);
+    margin-left: 10px;
+    margin-top: 5px;
     border: solid 1px rgb(39, 39, 39);
+    background-color: rgb(39, 39, 39);
     border-radius: 50px 50px;
-    padding: 20px 20px;
-    margin-right: 25px;
+    padding: 20px 13px;
 }
 .sendMsg a{
     color: rgb(136, 89, 245);
