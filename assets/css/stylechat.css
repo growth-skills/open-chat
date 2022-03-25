@@ -14,10 +14,152 @@ html,body{
     width: 40%;
     height: auto;
     float: left;
-    /* box-shadow: 2px 0 black; */
     background-color: rgb(39, 39, 39);
     color: white;
 }
+/* style de la barre de navigation */
+
+.btn-barre nav{
+    /* position: fixed; */
+    z-index: 10;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 0 5%;
+    /* height: 100px; */
+    /* background-color: #3e65da; */
+}
+/* .btn-barre nav .logo{
+    float: none;
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    color: white;
+} */
+.btn-barre nav .links{
+    float: none;
+    position: fixed;
+    z-index: 9;
+    left: 0;
+    right: 0;
+    top: 70px;
+    bottom: 100%;
+    width: 40%;
+    height: auto;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+    overflow: scroll;
+    transition: all .3s ease-in-out;
+    /* padding: 0 50px; */
+    margin: 0;
+    justify-content: space-around;
+    align-items: center;
+}
+.btn-barre nav .links a{
+    font-size: 20px;
+}
+.btn-barre nav .links li{
+    list-style: none;
+    
+}
+.btn-barre nav .links a{
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+#nav-toggle{
+    position: absolute;
+    top: -100px;
+}
+.btn-barre nav .icon-burger{
+    display: block;
+    position: absolute;
+    top: 5%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+.btn-barre nav :checked ~ .links{
+    bottom: 0;
+}
+.btn-barre nav .icon-burger .line{
+    width: 30px;
+    height: 5px;
+    background-color: darkgrey;
+    margin: 5px;
+    border-radius: 3px;
+    transition: all .3s ease-in-out;
+}
+.btn-barre nav :checked ~ .icon-burger .line:nth-child(1){
+    transform: translateY(10px) rotate(225deg);
+}
+.btn-barre nav :checked ~ .icon-burger .line:nth-child(3){
+    transform: translateY(-10px) rotate(-225deg);
+}
+.btn-barre nav :checked ~ .icon-burger .line:nth-child(2){
+    opacity: 0;
+}
+
+/* Style du contenue de la barre de navigation */
+
+.btn-barre nav .links h1{
+    padding: 15px 10px;
+}
+.btn-barre nav .links li img{
+    width: 100%;
+    height: auto;
+}
+.btn-barre nav .namtof{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin-top: -80px;
+    padding: 0 30px;
+}
+.btn-barre nav .namtof .onlinefil{
+    font-size: 16px;
+    font-weight: 400;
+    color: darkgrey;
+}
+.btn-barre nav .links .changetof i{
+    background-color: rgb(112, 56, 245);
+    padding: 30px 20px;
+    border: solid 1px rgb(112, 56, 245);
+    border-radius: 35px 35px;
+    margin-left: 80%;
+    margin-top: -10px;
+    
+}
+.btn-barre nav .links a{
+    margin: 0;
+    padding: 0;
+}
+.btn-barre nav .links li a i{
+    color: darkgrey;
+    padding: 0 30px;
+    margin-top: 25px;
+}
+.btn-barre nav .links .super-info{
+    color: darkgrey;
+    font-weight:300;
+    padding: 5px 85px;
+}
+.btn-barre nav .links button{
+    padding: 15px 60px;
+    margin: 50px 150px;
+    font-size: 18px;
+    color: white;
+    background-color: rgb(112, 56, 245);
+    border: solid 1px darkgrey;
+    border-radius: 10px 10px;
+}
+
+/* fin style de la barre de navigation */
+
 aside .search{
     padding: 10px 0;
 }
@@ -45,7 +187,9 @@ input::placeholder{
     padding:20px 40px; 
     color:darkgrey; 
 }
-
+aside .contacts li{
+    overflow: scroll;
+}
 .contenaire{
     color: white;
     display: flex;
@@ -75,6 +219,13 @@ input::placeholder{
     font-size: 16px;
     color: darkgrey;
 }
+.hrue{
+    font-size: 13px;
+    font-weight: 200;
+    color: darkgrey;
+    margin-top: -40px;
+    margin-left: 140px;
+}
 
 
 /* Style de la partie gauche */
@@ -85,8 +236,9 @@ input::placeholder{
     float: left;
     background-color: black;
     color: white;
+    overflow: scroll;
 }
-nav{
+.navv{
     background-color:rgb(39, 39, 39);
     position: fixed;
     margin-left: 2px;
