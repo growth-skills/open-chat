@@ -1,44 +1,37 @@
-*{
+* {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
 }
-html,body{
+
+html,
+body {
     background-color: black;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 /* Style de l'aside (partie droite) */
 
-.asid aside{
+.asid aside {
     width: 40%;
     height: auto;
     float: left;
     background-color: rgb(39, 39, 39);
     color: white;
 }
+
 /* style de la barre de navigation */
 
-.btn-barre nav{
-    /* position: fixed; */
+.btn-barre nav {
     z-index: 10;
     left: 0;
     right: 0;
     top: 0;
     padding: 0 5%;
-    /* height: 100px; */
-    /* background-color: #3e65da; */
 }
-/* .btn-barre nav .logo{
-    float: none;
-    width: auto;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    font-size: 24px;
-    color: white;
-} */
-.btn-barre nav .links{
+
+.btn-barre nav .links {
     float: none;
     position: fixed;
     z-index: 9;
@@ -51,20 +44,22 @@ html,body{
     flex-direction: column;
     background-color: rgb(0, 0, 0);
     overflow: scroll;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     /* padding: 0 50px; */
     margin: 0;
     justify-content: space-around;
     align-items: center;
 }
-.btn-barre nav .links a{
+
+.btn-barre nav .links a {
     font-size: 20px;
 }
-.btn-barre nav .links li{
+
+.btn-barre nav .links li {
     list-style: none;
-    
 }
-.btn-barre nav .links a{
+
+.btn-barre nav .links a {
     text-decoration: none;
     display: block;
     padding: 1em;
@@ -72,83 +67,97 @@ html,body{
     font-weight: bold;
     color: white;
 }
-#nav-toggle{
+
+#nav-toggle {
     position: absolute;
     top: -100px;
 }
-.btn-barre nav .icon-burger{
+
+.btn-barre nav .icon-burger {
     display: block;
     position: absolute;
     top: 5%;
     transform: translateY(-50%);
     z-index: 10;
 }
-.btn-barre nav :checked ~ .links{
+
+.btn-barre nav :checked~.links {
     bottom: 0;
 }
-.btn-barre nav .icon-burger .line{
+
+.btn-barre nav .icon-burger .line {
     width: 30px;
     height: 5px;
     background-color: darkgrey;
     margin: 5px;
     border-radius: 3px;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
-.btn-barre nav :checked ~ .icon-burger .line:nth-child(1){
+
+.btn-barre nav :checked~.icon-burger .line:nth-child(1) {
     transform: translateY(10px) rotate(225deg);
 }
-.btn-barre nav :checked ~ .icon-burger .line:nth-child(3){
+
+.btn-barre nav :checked~.icon-burger .line:nth-child(3) {
     transform: translateY(-10px) rotate(-225deg);
 }
-.btn-barre nav :checked ~ .icon-burger .line:nth-child(2){
+
+.btn-barre nav :checked~.icon-burger .line:nth-child(2) {
     opacity: 0;
 }
 
 /* Style du contenue de la barre de navigation */
 
-.btn-barre nav .links h1{
+.btn-barre nav .links h1 {
     padding: 15px 10px;
 }
-.btn-barre nav .links li img{
+
+.btn-barre nav .links li img {
     width: 100%;
     height: auto;
 }
-.btn-barre nav .namtof{
+
+.btn-barre nav .namtof {
     font-size: 20px;
     font-weight: bold;
     color: white;
     margin-top: -80px;
     padding: 0 30px;
 }
-.btn-barre nav .namtof .onlinefil{
+
+.btn-barre nav .namtof .onlinefil {
     font-size: 16px;
     font-weight: 400;
     color: darkgrey;
 }
-.btn-barre nav .links .changetof i{
+
+.btn-barre nav .links .changetof i {
     background-color: rgb(112, 56, 245);
     padding: 30px 20px;
     border: solid 1px rgb(112, 56, 245);
     border-radius: 35px 35px;
     margin-left: 80%;
     margin-top: -10px;
-    
 }
-.btn-barre nav .links a{
+
+.btn-barre nav .links a {
     margin: 0;
     padding: 0;
 }
-.btn-barre nav .links li a i{
+
+.btn-barre nav .links li a i {
     color: darkgrey;
     padding: 0 30px;
     margin-top: 25px;
 }
-.btn-barre nav .links .super-info{
+
+.btn-barre nav .links .super-info {
     color: darkgrey;
-    font-weight:300;
+    font-weight: 300;
     padding: 5px 85px;
 }
-.btn-barre nav .links button{
+
+.btn-barre nav .links button {
     padding: 15px 60px;
     margin: 50px 150px;
     font-size: 18px;
@@ -160,10 +169,11 @@ html,body{
 
 /* fin style de la barre de navigation */
 
-aside .search{
+aside .search {
     padding: 10px 0;
 }
-.search input{
+
+.search input {
     width: 75%;
     height: 50px;
     margin-left: 100px;
@@ -175,51 +185,60 @@ aside .search{
     font-size: 20px;
     outline: none;
     padding-left: 60px;
-
 }
-input::placeholder{
+
+input::placeholder {
     font-size: 20px;
 }
-.search i{
-    position:absolute; 
-    left:80px; 
-    top:15px; 
-    padding:20px 40px; 
-    color:darkgrey; 
+
+.search i {
+    position: absolute;
+    left: 80px;
+    top: 15px;
+    padding: 20px 40px;
+    color: darkgrey;
 }
-aside .contacts li{
+
+aside .contacts li {
     overflow: scroll;
 }
-.contenaire{
+
+.contenaire {
     color: white;
     display: flex;
     padding: 5px 20px;
     text-decoration: none;
 }
-.liens{
+
+.liens {
     text-decoration: none;
 }
-.contenaire:hover{
+
+.contenaire:hover {
     background-color: rgb(112, 56, 245);
     border-radius: 10px 10px;
 }
-.imgs img{
+
+.imgs img {
     width: 20%;
     height: auto;
     border-radius: 50px 50px;
 }
-.nam h5{
+
+.nam h5 {
     margin-left: -225px;
     margin-top: 10px;
     font-size: 18px;
     font-weight: 500;
 }
-.repon{
+
+.repon {
     font-weight: 400;
     font-size: 16px;
     color: darkgrey;
 }
-.hrue{
+
+.hrue {
     font-size: 13px;
     font-weight: 200;
     color: darkgrey;
@@ -227,10 +246,9 @@ aside .contacts li{
     margin-left: 140px;
 }
 
-
 /* Style de la partie gauche */
 
-.no-aside{
+.no-aside {
     width: 60%;
     height: auto;
     float: left;
@@ -238,28 +256,33 @@ aside .contacts li{
     color: white;
     overflow: scroll;
 }
-.navv{
-    background-color:rgb(39, 39, 39);
+
+.navv {
+    background-color: rgb(39, 39, 39);
     position: fixed;
     margin-left: 2px;
     width: 100%;
 }
-.fil{
+
+.fil {
     color: white;
     display: flex;
     padding: 5px 20px;
 }
-.img img{
+
+.img img {
     width: 16%;
     height: auto;
     border-radius: 50px 50px;
 }
-.name h5{
+
+.name h5 {
     margin-left: -240px;
     font-size: 18px;
     font-weight: 500;
 }
-.last{
+
+.last {
     font-weight: 400;
     font-size: 16px;
     color: darkgrey;
@@ -268,67 +291,79 @@ aside .contacts li{
 /* Style du partie chat */
 /* style de la converation à gauche  */
 
-.conv-gauche{
+.conv-gauche {
     margin-top: 70px;
     padding: 0 150px;
 }
-.conv-gauche .chatgch{
+
+.conv-gauche .chatgch {
     background-color: rgb(39, 39, 39);
     border: solid 1px rgb(39, 39, 39);
-    border-radius:  12px 12px 12px 0;
+    border-radius: 12px 12px 12px 0;
     width: 170px;
     padding: 2px 0;
 }
-.conv-gauche .chatgch p{
+
+.conv-gauche .chatgch p {
     margin-left: 10px;
 }
-.conv-gauche .chatgch  .hrr{
+
+.conv-gauche .chatgch .hrr {
     font-size: 12px;
     color: darkgrey;
     text-align: right;
 }
+
 /* fin  */
 /* Style bouleGen  */
-.bouleGen{
+.bouleGen {
     padding: 0 0px;
     height: auto;
 }
+
 /* style de la conversation à droite */
-.conv-droite{
+.conv-droite {
     margin-left: 500px;
 }
-.conv-droite .chatdrt{
+
+.conv-droite .chatdrt {
     background-color: rgb(112, 56, 245);
     border: solid 1px rgb(112, 56, 245);
     border-radius: 12px 12px 0 12px;
     width: 170px;
     padding: 2px 0;
 }
-.conv-droite .chatdrt p{
+
+.conv-droite .chatdrt p {
     margin-left: 12px;
 }
-.conv-droite .chatdrt .hrr{
+
+.conv-droite .chatdrt .hrr {
     font-size: 12px;
     color: darkgrey;
     text-align: right;
 }
+
 /* Style de la conver-1 */
 
-.conv-gauche-1{
+.conv-gauche-1 {
     margin-top: 10px;
     padding: 0 150px;
 }
-.conv-gauche-1 .chatgch-1{
+
+.conv-gauche-1 .chatgch-1 {
     background-color: rgb(39, 39, 39);
     border: solid 1px rgb(39, 39, 39);
-    border-radius:  12px 12px 12px 0;
+    border-radius: 12px 12px 12px 0;
     width: 520px;
     padding: 2px 0;
 }
-.conv-gauche-1 .chatgch-1 p{
+
+.conv-gauche-1 .chatgch-1 p {
     margin-left: 10px;
 }
-.conv-gauche-1 .chatgch-1  .hrr{
+
+.conv-gauche-1 .chatgch-1 .hrr {
     font-size: 12px;
     color: darkgrey;
     text-align: right;
@@ -336,21 +371,24 @@ aside .contacts li{
 
 /* style de la conver-1 */
 
-.conv-droite-1{
+.conv-droite-1 {
     margin-left: 500px;
     margin-top: 10px;
 }
-.conv-droite-1 .chatdrt-1{
+
+.conv-droite-1 .chatdrt-1 {
     background-color: rgb(112, 56, 245);
     border: solid 1px rgb(112, 56, 245);
     border-radius: 12px 12px 0 12px;
     width: 170px;
     padding: 2px 0;
 }
-.conv-droite-1 .chatdrt-1 p{
+
+.conv-droite-1 .chatdrt-1 p {
     margin-left: 12px;
 }
-.conv-droite-1 .chatdrt-1 .hrr{
+
+.conv-droite-1 .chatdrt-1 .hrr {
     font-size: 12px;
     color: darkgrey;
     text-align: right;
@@ -358,35 +396,40 @@ aside .contacts li{
 
 /* style de la conver-2 */
 
-.conv-droite-2{
+.conv-droite-2 {
     margin-left: 170px;
     margin-top: 10px;
 }
-.conv-droite-2 .chatdrt-2{
+
+.conv-droite-2 .chatdrt-2 {
     background-color: rgb(112, 56, 245);
     border: solid 1px rgb(112, 56, 245);
     border-radius: 12px 12px 0 12px;
     width: 500px;
     padding: 2px 0;
 }
-.conv-droite-2 .chatdrt-2 p{
+
+.conv-droite-2 .chatdrt-2 p {
     margin-left: 12px;
 }
-.conv-droite-2 .chatdrt-2 .hrr{
+
+.conv-droite-2 .chatdrt-2 .hrr {
     font-size: 12px;
     color: darkgrey;
     text-align: right;
 }
+
 /* Fin style conversation */
 
 /* Début style boite mssg  */
-.boiteMsg{
+.boiteMsg {
     display: flex;
     justify-content: space-between;
     padding: 10px 0;
     position: fixed;
 }
-.saisieMsg{
+
+.saisieMsg {
     background-color: rgb(39, 39, 39);
     border: solid 1px rgb(39, 39, 39);
     border-radius: 12px 12px 0 12px;
@@ -395,11 +438,12 @@ aside .contacts li{
     padding: 10px 10px;
     margin-left: 140px;
 }
-.saisieMsg a{
+
+.saisieMsg a {
     color: darkgrey;
 }
 
-.saisieMsg input{
+.saisieMsg input {
     background-color: rgb(39, 39, 39);
     border: solid 1px rgb(39, 39, 39);
     outline: none;
@@ -409,7 +453,8 @@ aside .contacts li{
     width: 88%;
     height: auto;
 }
-.sendMsg{
+
+.sendMsg {
     margin-left: 10px;
     margin-top: 5px;
     border: solid 1px rgb(39, 39, 39);
@@ -417,7 +462,9 @@ aside .contacts li{
     border-radius: 50px 50px;
     padding: 20px 13px;
 }
-.sendMsg a{
+
+.sendMsg a {
     color: rgb(136, 89, 245);
 }
+
 /* fin */
