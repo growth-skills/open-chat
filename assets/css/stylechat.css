@@ -19,6 +19,8 @@ body {
     float: left;
     background-color: rgb(39, 39, 39);
     color: white;
+    /* position: fixed;
+    overflow: scroll; */
 }
 
 /* style de la barre de navigation */
@@ -215,7 +217,7 @@ aside .contacts li {
 }
 
 .contenaire:hover {
-    background-color: rgb(112, 56, 245);
+    background-color: rgba(169, 169, 169, 0.158);
     border-radius: 10px 10px;
 }
 

@@ -35,10 +35,25 @@ h2 {
   font-size: 35px;
   color: rgba(16, 26, 34, 0.788);
 }
+.titre h2 .fontawe{
+  color: rgb(112, 56, 245);
+}
 
 /* style du compte */
 .compte h4 {
   font-size: 25px;
+}
+.compte h4 .connexfont{
+  color:brown;
+}
+.compte h4 .comptefont{
+  color: darkgreen;
+}
+.compte h4 .mpfont{
+  color: darkgoldenrod;
+}
+.compte h4 .changmpfont{
+  color: darkgreen;
 }
 
 /* style du label */
