@@ -22,7 +22,7 @@ body {
   height: auto;
   margin-top: 20px;
   margin-bottom: 50px;
-  Box-shadow : rgba( 0,0,0, 0.2) 0px 2px 7px 5px; 
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 7px 5px;
 }
 
 /* style du titre */
@@ -35,7 +35,7 @@ h2 {
   font-size: 35px;
   color: rgba(16, 26, 34, 0.788);
 }
-.titre h2 .fontawe{
+.titre h2 .fontawe {
   color: rgb(112, 56, 245);
 }
 
@@ -43,16 +43,16 @@ h2 {
 .compte h4 {
   font-size: 25px;
 }
-.compte h4 .connexfont{
-  color:brown;
+.compte h4 .connexfont {
+  color: brown;
 }
-.compte h4 .comptefont{
+.compte h4 .comptefont {
   color: darkgreen;
 }
-.compte h4 .mpfont{
+.compte h4 .mpfont {
   color: darkgoldenrod;
 }
-.compte h4 .changmpfont{
+.compte h4 .changmpfont {
   color: darkgreen;
 }
 
@@ -87,7 +87,7 @@ input::placeholder {
 .inp2 {
   padding: 20px 0;
 }
-.inp2 input {
+.inp2 button {
   width: 100%;
   height: 45px;
   background-color: rgb(112, 56, 245);
@@ -101,10 +101,10 @@ input::placeholder {
   color: rgb(112, 56, 245);
   text-decoration: none;
 }
-/* fin du style inscription */ 
+/* fin du style inscription */
 
 /* style connexion */
-.lab1  .changmp a{
+.lab1 .changmp a {
   float: right;
   text-decoration: none;
   color: rgb(112, 56, 245);
@@ -114,7 +114,8 @@ input::placeholder {
 /* style page motpass */
 /* syle retour  */
 
-.retour ,.lien-re{
+.retour,
+.lien-re {
   color: rgb(112, 56, 245);
   text-decoration: none;
   text-align: center;
@@ -123,4 +124,3 @@ input::placeholder {
 }
 
 /* ====================================================== */
-
