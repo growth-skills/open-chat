@@ -1,0 +1,190 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+/* Begin Style Aside */
+.container-chat .aside-one {
+  position: fixed;
+  width: 40%;
+  height: 100%;
+  background-color: white;
+  border-right: 1px solid black;
+  overflow: scroll;
+}
+
+/* Style Profile */
+.aside-1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px;
+  width: 40%;
+  position: fixed;
+  background-color: rgb(112, 56, 245);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 7px 5px;
+}
+
+.aside-1 .aside-profil {
+  display: flex;
+  justify-content: space-between;
+}
+.aside-profil img {
+  width: 50px;
+  height: 50px;
+  border-radius: 30px 30px;
+}
+.aside-profil h3 {
+  color: white;
+  margin-left: 15px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+}
+.aside-profil h3 .online {
+  color: rgb(207, 206, 206);
+  /* display: none; */
+}
+.aside-setting .icon-1 {
+  font-size: 20px;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+}
+/* End */
+
+/* Style Oglers */
+.aside-2 {
+  margin-top: 90px;
+  padding: 20px 0;
+  background-color: white;
+  border-bottom: 2px solid rgb(112, 56, 245);
+}
+.aside-2 a {
+  padding: 20px 54px;
+  text-decoration: none;
+  color: rgb(112, 56, 245);
+}
+.aside-2 a:hover {
+  background-color: rgb(112, 56, 245);
+  color: white;
+  transition: 0.6s;
+}
+/* End */
+
+/* Style bull contact */
+.aside-3 {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px;
+  border-bottom: 2px solid rgba(128, 126, 126, 0.808);
+}
+.aside-3 .aside-image img {
+  width: 60px;
+  height: 60px;
+  border-radius: 40px 40px;
+}
+.aside-3 .aside-name {
+  margin-right: 300px;
+  line-height: 30px;
+}
+.aside-3 .aside-name h3 {
+  font-weight: 500;
+}
+.aside-3 .aside-name span {
+  color: rgb(87, 86, 86);
+}
+.aside-3:hover {
+  background-color: rgb(221, 238, 247);
+  transition: 0.6s;
+}
+/* End */
+
+/* Begin style Section */
+
+.container-chat .section-one {
+  position: fixed;
+  right: 0;
+  width: 60%;
+  height: 100%;
+  background-color: rgb(221, 238, 247);
+  border-right: 1px solid black;
+  overflow: scroll;
+}
+
+/* Style section profil */
+.section-one .section-info {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  width: 60%;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 7px 5px;
+}
+.section-one .section-info .sect-name {
+  font-weight: 400;
+  margin-left: 70px;
+}
+.section-one .section-info .sect-option i {
+  padding: 10px 20px;
+  color: rgb(112, 56, 245);
+  cursor: pointer;
+}
+.section-one .section-info .sect-option .vertical {
+  border-left: 2px solid rgb(153, 152, 152);
+  height: 20px;
+  margin-bottom: -4px;
+  margin-right: -10px;
+  display: inline-block;
+}
+.section-one .section-info .sect-option #icon-x {
+  color: rgba(153, 152, 152);
+}
+/* End */
+
+/* Style Bull conversation */
+/* .section-one .sect-space-conversation {
+  background-color: rgb(221, 238, 247);
+  height: 100%;
+} */
+.section-one .sect-space-conversation .sect-bull {
+  margin-top: 80px;
+}
+.sect-bull .sect-bull-right {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 20px;
+}
+.sect-bull .sect-bull-right img {
+  width: 6%;
+  height: 6%;
+  border-radius: 30px 30px;
+  margin-top: 7px;
+  /* margin-right: 150px; */
+}
+.sect-bull .sect-bull-right .sect-bull-mssg {
+  border: 1px solid white;
+  background-color: white;
+  padding: 20px 10px;
+  width: 35%;
+  height: auto;
+  border-radius: 10px 10px;
+  margin-right: 350px;
+}
+.sect-bull .sect-bull-right .sect-bull-mssg .mssg {
+  font-size: 15px;
+  font-weight: 400;
+}
+.sect-bull .sect-bull-right .hours {
+  font-size: 12px;
+  color: rgba(153, 152, 152);
+  margin-top: 45px;
+}
+
+.sect-bull .sect-bull-left {
+  display: flex;
+  justify-content: space-evenly;
+}
