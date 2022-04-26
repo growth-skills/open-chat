@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <!-- fa fa-chevron-left -->
 
     <div class="container-chat">
         <!-- Create space aside  -->
@@ -149,30 +150,35 @@
 
                 <!-- Create bull of conversation -->
                 <div class="sect-bull">
-                    <div class="sect-bull-right">
+                    <div class="sect-bull-left">
                         <img src="/assets/img/profil.jpeg" alt="">
-                        <div class="sect-bull-mssg">
+                        <div class="sect-bull-mssg-1 bubble">
                             <p class="mssg">Hi, What time is lunch ?</p>
                         </div>
-                        <p class="hours">10:32 AM</p>
+                        <time class="hours-1">10:32 AM</time>
                     </div>
 
-                    <div class="sect-bull-left">
-                        <span>10:32 AM</span>
-                        <p>At 13:00 let's go to dinner</p>
+                    <div class="sect-bull-right">
+                        <time class="hours-2">10:35 AM</time>
+                        <div class="sect-bull-mssg-2 bubble">
+                            <p class="mssg">let's go to dinner</p>
+                        </div>
                     </div>
                 </div>
-                <!-- End -->
 
-                <!-- Space write message  -->
-                <div class="sect-whrite-mssg">
-                    <i class="fa-solid fa-paperclip" id="icon-paperclip"></i>
-                    <input type="text" name="text" id="text" placeholder="Message...">
-                    <i class="fa-regular fa-face-grin" id="icon-face"></i>
-                    <i class="fa-solid fa-paper-plane" id="icon-plane"></i>
-                </div>
                 <!-- End -->
             </div>
+            <!-- Space write message  -->
+            <div class="sect-whrite-mssg">
+                <i class="fa-solid fa-paperclip" id="icon-paperclip"></i>
+                <div class="box-mssg">
+                    <input type="text" name="text" id="text" placeholder="Message...">
+                    <i class="fa-regular fa-face-grin" id="icon-face"></i>
+                </div>
+                <i class="fa-solid fa-paper-plane" id="icon-plane"></i>
+            </div>
+            <!-- End -->
+
 
         </section>
     </div>
