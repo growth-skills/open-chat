@@ -182,8 +182,8 @@
   top: 21px;
 }
 
-.sect-bull .sect-bull-left .sect-bull-mssg .mssg {
-  font-size: 15px;
+.sect-bull .sect-bull-left .sect-bull-mssg-1 .mssg {
+  font-size: 16px;
   font-weight: 400;
 }
 .sect-bull .sect-bull-left .hours-1 {
@@ -220,9 +220,10 @@
   top: 21px;
 }
 
-.sect-bull .sect-bull-right .sect-bull-mssg .mssg {
-  font-size: 15px;
+.sect-bull .sect-bull-right .sect-bull-mssg-2 .mssg {
+  font-size: 16px;
   font-weight: 400;
+  color: white;
 }
 .sect-bull .sect-bull-right .hours-2 {
   font-size: 12px;
