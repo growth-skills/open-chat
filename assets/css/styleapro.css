@@ -252,6 +252,7 @@
   width: 450px;
   height: auto;
   border-radius: 35px 35px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 7px 5px;
 }
 .sect-whrite-mssg .box-mssg input {
   background-color: white;
