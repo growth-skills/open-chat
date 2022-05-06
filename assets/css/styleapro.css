@@ -20,7 +20,7 @@
 .aside-1 {
   display: flex;
   justify-content: space-between;
-  padding: 20px 20px;
+  padding: 20px 25px;
   width: 40%;
   position: fixed;
   background-color: rgb(112, 56, 245);
@@ -46,6 +46,7 @@
 .aside-profil h3 .online {
   color: rgb(207, 206, 206);
   /* display: none; */
+  visibility: hidden;
 }
 .aside-setting .icon-1 {
   font-size: 20px;
@@ -53,6 +54,103 @@
   color: white;
   cursor: pointer;
 }
+
+.icon-ellipsis {
+  border: 1px solid rgb(112, 56, 245);
+  background: rgb(112, 56, 245);
+  border-radius: 50px 50px;
+  transition: 0.4s;
+  position: relative;
+  box-shadow: rgb(0, 0, 0, 0.2) 0px 2px 7px 5px;
+}
+
+/* box-js */
+.box {
+  display: none;
+  border: 1px solid linear-gradient(45deg, #672eec, #010149);
+  background: linear-gradient(45deg, #672eec, #080833);
+  width: 250px;
+  height: auto;
+  border-radius: 15px;
+  position: relative;
+  top: 0;
+  opacity: 0;
+  transform: translateY(0);
+}
+.box::after {
+  content: "";
+  position: absolute;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid rgb(3, 11, 59);
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  top: -36px;
+  right: 3px;
+}
+.boxing {
+  display: block;
+  position: absolute;
+  right: 26px;
+  transition: 0.6s;
+  opacity: 1;
+  transform: translateY(85px);
+}
+
+/* Style container Box */
+.box .cont-box {
+  padding: 0 25px;
+}
+.box .cont-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  padding: 15px 0;
+}
+.box .cont-box .name-fil {
+  color: rgba(245, 244, 244, 0.877);
+  text-align: center;
+}
+.box .cont-box .icon-social {
+  padding: 15px 18px;
+  font-size: 30px;
+  color: rgba(245, 244, 244, 0.877);
+}
+.box .cont-box .ligne {
+  color: rgb(29, 20, 20);
+}
+.box .cont-box ul li {
+  padding: 10px 0;
+  list-style: none;
+}
+.box .cont-box ul li .icon-info-social {
+  color: rgba(199, 198, 198, 0.877);
+  font-size: 15px;
+  padding: 5px 10px;
+}
+.box .cont-box ul li span {
+  color: rgba(245, 244, 244, 0.877);
+  font-size: 13px;
+}
+.box .cont-box ul li .icon-setg-social {
+  color: rgba(199, 198, 198, 0.877);
+  font-size: 20px;
+  padding: 10px 10px;
+}
+.box .cont-box ul li .setg-name {
+  color: rgba(245, 244, 244, 0.877);
+  font-size: 18px;
+}
+.box footer {
+  background: rgb(37, 24, 65);
+  padding: 10px 0;
+  border-radius: 0 0 15px 15px;
+}
+.box footer p {
+  color: rgba(153, 152, 152, 0.877);
+  font-size: 15px;
+  text-align: center;
+}
+
 /* End */
 
 /* Style Oglers */
