@@ -1,0 +1,380 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+/* Begin Style Aside */
+.container-chat .aside-one {
+  position: fixed;
+  width: 40%;
+  height: 100%;
+  background-color: white;
+  border-right: 1px solid black;
+  overflow: scroll;
+}
+
+/* Style Profile */
+.aside-1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 25px;
+  width: 40%;
+  position: fixed;
+  background-color: rgb(112, 56, 245);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 7px 5px;
+}
+
+.aside-1 .aside-profil {
+  display: flex;
+  justify-content: space-between;
+}
+.aside-profil img {
+  width: 50px;
+  height: 50px;
+  border-radius: 30px 30px;
+}
+.aside-profil h3 {
+  color: white;
+  margin-left: 15px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+}
+.aside-profil h3 .online {
+  color: rgb(207, 206, 206);
+  /* display: none; */
+  visibility: hidden;
+}
+.aside-setting .icon-1 {
+  font-size: 20px;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.icon-ellipsis {
+  border: 1px solid rgb(112, 56, 245);
+  background: rgb(112, 56, 245);
+  border-radius: 50px 50px;
+  transition: 0.4s;
+  position: relative;
+  box-shadow: rgb(0, 0, 0, 0.2) 0px 2px 7px 5px;
+}
+
+/* box-js */
+.box {
+  display: none;
+  border: 1px solid linear-gradient(45deg, #672eec, #010149);
+  background: linear-gradient(45deg, #672eec, #080833);
+  width: 250px;
+  height: auto;
+  border-radius: 15px;
+  position: relative;
+  top: 0;
+  opacity: 0;
+  transform: translateY(0);
+}
+.box::after {
+  content: "";
+  position: absolute;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid rgb(3, 11, 59);
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  top: -36px;
+  right: 3px;
+}
+.boxing {
+  display: block;
+  position: absolute;
+  right: 26px;
+  transition: 0.6s;
+  opacity: 1;
+  transform: translateY(85px);
+}
+
+/* Style container Box */
+.box .cont-box {
+  padding: 0 25px;
+}
+.box .cont-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  padding: 15px 0;
+}
+.box .cont-box .name-fil {
+  color: rgba(245, 244, 244, 0.877);
+  text-align: center;
+}
+.box .cont-box .icon-social {
+  padding: 15px 18px;
+  font-size: 30px;
+  color: rgba(245, 244, 244, 0.877);
+}
+.box .cont-box .ligne {
+  color: rgb(29, 20, 20);
+}
+.box .cont-box ul li {
+  padding: 10px 0;
+  list-style: none;
+}
+.box .cont-box ul li .icon-info-social {
+  color: rgba(199, 198, 198, 0.877);
+  font-size: 15px;
+  padding: 5px 10px;
+}
+.box .cont-box ul li span {
+  color: rgba(245, 244, 244, 0.877);
+  font-size: 13px;
+}
+.box .cont-box ul li .icon-setg-social {
+  color: rgba(199, 198, 198, 0.877);
+  font-size: 20px;
+  padding: 10px 10px;
+}
+.box .cont-box ul li .setg-name {
+  color: rgba(245, 244, 244, 0.877);
+  font-size: 18px;
+}
+.box footer {
+  background: rgb(37, 24, 65);
+  padding: 10px 0;
+  border-radius: 0 0 15px 15px;
+}
+.box footer p {
+  color: rgba(153, 152, 152, 0.877);
+  font-size: 15px;
+  text-align: center;
+}
+
+/* End */
+
+/* Style Oglers */
+.aside-2 {
+  margin-top: 90px;
+  padding: 20px 0;
+  background-color: white;
+  border-bottom: 2px solid rgb(112, 56, 245);
+}
+.aside-2 a {
+  padding: 20px 54px;
+  text-decoration: none;
+  color: rgb(112, 56, 245);
+}
+.aside-2 a:hover {
+  background-color: rgb(112, 56, 245);
+  color: white;
+  transition: 0.6s;
+}
+/* End */
+
+/* Style bull contact */
+.aside-3 {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px;
+  border-bottom: 1px solid rgba(128, 126, 126, 0.808);
+  cursor: pointer;
+}
+.aside-3 .aside-image img {
+  width: 60px;
+  height: 60px;
+  border-radius: 40px 40px;
+}
+.aside-3 .aside-name {
+  margin-right: 300px;
+  line-height: 30px;
+}
+.aside-3 .aside-name h3 {
+  font-weight: 500;
+}
+.aside-3 .aside-name span {
+  color: rgb(87, 86, 86);
+}
+.aside-3:hover {
+  background-color: rgb(221, 238, 247);
+  transition: 0.6s;
+}
+/* End */
+
+/* Begin style Section */
+
+.container-chat .section-one {
+  position: fixed;
+  right: 0;
+  width: 60%;
+  height: 100%;
+  background-color: rgb(221, 238, 247);
+  border-right: 1px solid black;
+  overflow: scroll;
+}
+
+/* Style section profil */
+.section-one .section-info {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  width: 60%;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 7px 5px;
+}
+.section-one .section-info .sect-name {
+  font-weight: 400;
+  margin-left: 70px;
+}
+.section-one .section-info .sect-option i {
+  padding: 10px 20px;
+  color: rgb(112, 56, 245);
+  cursor: pointer;
+}
+.section-one .section-info .sect-option .vertical {
+  border-left: 2px solid rgb(153, 152, 152);
+  height: 20px;
+  margin-bottom: -4px;
+  margin-right: -10px;
+  display: inline-block;
+}
+.section-one .section-info .sect-option #icon-x {
+  color: rgba(153, 152, 152);
+}
+/* End */
+
+/* Style Bull conversation */
+/* Bull left */
+.section-one .sect-space-conversation .sect-bull {
+  margin-top: 80px;
+}
+.sect-bull .sect-bull-left {
+  display: flex;
+  padding: 30px 20px;
+}
+.sect-bull .sect-bull-left img {
+  width: 6%;
+  height: 6%;
+  border-radius: 30px 30px;
+  margin-top: 7px;
+}
+
+.sect-bull-left .sect-bull-mssg-1 {
+  width: 250px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  margin-left: 16px;
+  z-index: -1;
+}
+.sect-bull-left .sect-bull-mssg-1::after {
+  content: "";
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid white;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  left: -20px;
+  top: 21px;
+}
+
+.sect-bull .sect-bull-left .sect-bull-mssg-1 .mssg {
+  font-size: 16px;
+  font-weight: 400;
+}
+.sect-bull .sect-bull-left .hours-1 {
+  font-size: 12px;
+  color: rgba(153, 152, 152);
+  margin-top: 45px;
+  margin-left: 20px;
+}
+/* End style bull left */
+
+/* Style bull right */
+.sect-bull .sect-bull-right {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px 20px;
+}
+.sect-bull-right .sect-bull-mssg-2 {
+  width: 250px;
+  background: rgb(112, 56, 245);
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  margin-left: 16px;
+  z-index: -1;
+}
+.sect-bull-right .sect-bull-mssg-2::after {
+  content: "";
+  position: absolute;
+  border-left: 10px solid rgb(112, 56, 245);
+  border-right: 10px solid transparent;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  right: -20px;
+  top: 21px;
+}
+
+.sect-bull .sect-bull-right .sect-bull-mssg-2 .mssg {
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+}
+.sect-bull .sect-bull-right .hours-2 {
+  font-size: 12px;
+  color: rgba(153, 152, 152);
+  margin-top: 45px;
+  margin-left: 360px;
+}
+/* End */
+
+/* Style write message */
+.sect-whrite-mssg {
+  display: flex;
+  margin-top: 38%;
+  padding: 20px 20px;
+  margin-left: 70px;
+}
+.sect-whrite-mssg #icon-paperclip {
+  font-size: 25px;
+  color: rgba(153, 152, 152);
+  padding: 16px 18px;
+  cursor: pointer;
+}
+.sect-whrite-mssg .box-mssg {
+  border: 1px solid white;
+  background-color: white;
+  width: 450px;
+  height: auto;
+  border-radius: 35px 35px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 7px 5px;
+}
+.sect-whrite-mssg .box-mssg input {
+  background-color: white;
+  border: 1px solid white;
+  padding: 15px 10px;
+  font-size: 18px;
+  width: 75%;
+  height: auto;
+  outline: none;
+  margin-left: 30px;
+}
+.sect-whrite-mssg .box-mssg input::placeholder {
+  font-size: 18px;
+}
+.sect-whrite-mssg #icon-face {
+  font-size: 25px;
+  color: rgb(153, 152, 152);
+  margin-top: 15px;
+  margin-left: 25px;
+  cursor: pointer;
+}
+.sect-whrite-mssg #icon-plane {
+  font-size: 25px;
+  color: rgb(112, 56, 245);
+  padding: 16px 20px;
+  cursor: pointer;
+}
